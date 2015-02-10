@@ -21,6 +21,14 @@ perform the following steps.
    or...
 4. `grunt serve` to create a server that serves the presentation.
 
+### Alternative
+
+If you are reluctant to install all these tools you can instead
+install just one: [docker][].
+
+Once installed one can use the [dvberkel/docker-generator-reveal][]
+repository to perform the same functionality.
+
 [generator-reveal]: https://github.com/slara/generator-reveal
 [reveal.js]: http://lab.hakim.se/reveal-js/#/
 [yeoman]: http://yeoman.io/
@@ -30,3 +38,5 @@ perform the following steps.
 [node]: http://nodejs.org/
 [installer]: http://nodejs.org/download/
 [source]: https://github.com/joyent/node
+[docker]: https://www.docker.com/
+[dvberkel/docker-generator-reveal]: https://registry.hub.docker.com/u/dvberkel/docker-generator-reveal.git/
