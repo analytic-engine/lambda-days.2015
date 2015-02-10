@@ -1,0 +1,11 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Ada Lovelace",
+    "packageVersion": "1.0.0",
+    "revealTheme": "night",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "dvberkel",
+    "githubRepository": "lambda-days.2015"
+  }
+}
