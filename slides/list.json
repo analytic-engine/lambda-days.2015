@@ -1,1 +1,10 @@
-["title.md"]
+[
+    "title.md",
+    {
+        "filename": "number.html",
+        "attr": {
+            "data-state": "a-number"
+        }
+    },
+    "representation.html"
+]
