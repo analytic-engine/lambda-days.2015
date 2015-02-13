@@ -1,13 +1,16 @@
-/*global Reveal, document, numbers, console*/
+/*global Reveal, document, numbers*/
 (function(Reveal, numbers){
     'use strict';
 
+    var model = new numbers.Model(137);
     var actions = {
         'a-number': function(id){
-            var model = new numbers.Model(137);
             var span = document.getElementById(id);
             new numbers.RegularView(model, span);
-            console.log(id);
+        },
+        'a-representation': function(id){
+            var span = document.getElementById(id);
+            new numbers.RepresentationView(model, span);
         }
     };
 
