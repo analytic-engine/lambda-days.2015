@@ -11,5 +11,11 @@
         "attr": {
             "data-state": "a-representation"
         }
+    },
+    {
+        "filename": "power.html",
+        "attr": {
+            "data-state": "a-power"
+        }
     }
 ]

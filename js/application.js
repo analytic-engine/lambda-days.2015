@@ -11,6 +11,10 @@
         'a-representation': function(id){
             var span = document.getElementById(id);
             new numbers.RepresentationView(model, span, { representation: numbers.multiplication });
+        },
+        'a-power': function(id){
+            var span = document.getElementById(id);
+            new numbers.RepresentationView(model, span);
         }
     };
 
