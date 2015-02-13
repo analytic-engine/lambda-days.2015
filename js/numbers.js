@@ -23,27 +23,43 @@
         this.container.innerText = n;
     };
 
-    var Representation = $.RepresentationView = function(model, container){
+    $.multiplication = function(base, power){
+        return [ Math.pow(base, power) ];
+    };
+    $.power = function(base, power){
+        return [ base, '<sup>', power, '</sup>' ];
+    };
+
+    var extend = function(){
+        var result = {};
+        Array.prototype.slice.call(arguments).forEach(function(argument){
+            for (var key in argument) {
+                if (!(key in result)) {
+                    result[key] = argument[key];
+                }
+            }
+        });
+        return result;
+    };
+
+    var Representation = $.RepresentationView = function(model, container, options){
+        this.options = extend(options || {}, { base: 10, representation: $.power });
         this.model = model;
         this.container = container;
         this.model.on('n', this.update.bind(this));
         this.update(this.model.n);
     };
     Representation.prototype.update = function(n){
-        var digits = math.digits(n, 10);
+        var digits = math.digits(n, this.options.base);
         var content = digits.map(function(digit, index){
             var power = digits.length - 1 - index;
             return [digit, power];
         }).map(function(pair){
             return [
                 pair[0],
-                '&times;',
-                '10',
-                '<sup>',
-                pair[1],
-                '</sup>'
-            ].join('');
-        }).join('+');
+                '&times;'
+            ].concat(this.options.representation(this.options.base, pair[1])).join('');
+        }.bind(this)).join('+');
         this.container.innerHTML = content;
     };
 })(window.numbers = window.numbers || {}, ns.Observable, math);
