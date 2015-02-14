@@ -1,4 +1,4 @@
-/*global Object, window, ns, math*/
+/*global Object, window, document, ns, math*/
 (function($, Observable, math){
     'use strict';
 
@@ -61,5 +61,55 @@
             ].concat(this.options.representation(this.options.base, pair[1])).join('');
         }.bind(this)).join('+');
         this.container.innerHTML = content;
+    };
+
+    var EditableView = $.EditableView = function(model, container, options){
+        Observable.call(this);
+        this.options = extend(options || {}, { editing : false });
+        this.model = model;
+        this.container = container;
+        this.editing = false;
+        this.on('mode changed', this.visibility.bind(this));
+        this.model.on('n', this.update.bind(this));
+        this.visibility();
+        this.update(this.model.n);
+    };
+    EditableView.prototype = Object.create(Observable.prototype);
+    EditableView.prototype.constructor = EditableView;
+    EditableView.prototype.toggleEditing = function(){
+        this.editing = !this.editing;
+        this.signal('mode changed', this.editing);
+    };
+    EditableView.prototype.visibility = function(){
+        this.view().setAttribute('style', 'display: ' + (this.editing ? 'none' : 'inline'));
+        this.input().setAttribute('style', 'display: ' + (this.editing ? 'inline' : 'none'));
+    };
+    EditableView.prototype.update = function(n){
+        this.view().innerText = n;
+        this.input().value = n;
+    };
+    EditableView.prototype.view = function(){
+        if (!this._view){
+            var element = this._view = document.createElement('span');
+            this.container.appendChild(element);
+            element.addEventListener('click', this.toggleEditing.bind(this));
+        }
+        return this._view;
+    };
+    EditableView.prototype.input = function(){
+        if (!this._input){
+            var element = this._input = document.createElement('input');
+            this.container.appendChild(element);
+            element.addEventListener('change', this.toggleEditing.bind(this));
+            element.addEventListener('change', function(){
+                var n = this.model.n;
+                try {
+                    this.model.set(parseInt(element.value));
+                } catch (_) {
+                    this.model.set(n);
+                }
+            }.bind(this));
+        }
+        return this._input;
     };
 })(window.numbers = window.numbers || {}, ns.Observable, math);

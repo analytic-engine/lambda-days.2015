@@ -17,5 +17,11 @@
         "attr": {
             "data-state": "a-power"
         }
+    },
+    {
+        "filename": "punchcard.html",
+        "attr": {
+            "data-state": "a-punchcard"
+        }
     }
 ]

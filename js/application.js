@@ -15,6 +15,10 @@
         'a-power': function(id){
             var span = document.getElementById(id);
             new numbers.RepresentationView(model, span);
+        },
+        'a-punchcard': function(id){
+            var span = document.getElementById(id + '-editable');
+            new numbers.EditableView(model, span);
         }
     };
 
