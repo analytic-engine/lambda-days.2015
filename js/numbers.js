@@ -99,6 +99,8 @@
     EditableView.prototype.input = function(){
         if (!this._input){
             var element = this._input = document.createElement('input');
+            element.setAttribute('size', 3);
+            element.setAttribute('class', 'editable number input');
             this.container.appendChild(element);
             element.addEventListener('change', this.toggleEditing.bind(this));
             element.addEventListener('change', function(){
