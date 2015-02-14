@@ -5,20 +5,21 @@
     var model = new numbers.Model(137);
     var actions = {
         'a-number': function(id){
-            var span = document.getElementById(id);
-            new numbers.RegularView(model, span);
+            var container = document.getElementById(id);
+            new numbers.RegularView(model, container);
         },
         'a-representation': function(id){
-            var span = document.getElementById(id);
-            new numbers.RepresentationView(model, span, { representation: numbers.multiplication });
+            var container = document.getElementById(id);
+            new numbers.RepresentationView(model, container, { representation: numbers.multiplication });
         },
         'a-power': function(id){
-            var span = document.getElementById(id);
-            new numbers.RepresentationView(model, span);
+            var container = document.getElementById(id);
+            new numbers.RepresentationView(model, container);
         },
         'a-punchcard': function(id){
-            var span = document.getElementById(id + '-editable');
-            new numbers.EditableView(model, span);
+            var container = document.getElementById(id + '-editable');
+            new numbers.EditableView(model, container);
+            new numbers.PunchcardView(model, document.getElementById(id));
         }
     };
 
