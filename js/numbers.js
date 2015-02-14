@@ -77,7 +77,16 @@
     EditableView.prototype = Object.create(Observable.prototype);
     EditableView.prototype.constructor = EditableView;
     EditableView.prototype.toggleEditing = function(){
-        this.editing = !this.editing;
+        this.setEditing(!this.editing);
+    };
+    EditableView.prototype.startEditing = function(){
+        this.setEditing(true);
+    };
+    EditableView.prototype.stopEditing = function(){
+        this.setEditing(false);
+    };
+    EditableView.prototype.setEditing = function(editing){
+        this.editing = editing;
         this.signal('mode changed', this.editing);
     };
     EditableView.prototype.visibility = function(){
@@ -92,7 +101,7 @@
         if (!this._view){
             var element = this._view = document.createElement('span');
             this.container.appendChild(element);
-            element.addEventListener('click', this.toggleEditing.bind(this));
+            element.addEventListener('click', this.startEditing.bind(this));
         }
         return this._view;
     };
@@ -102,7 +111,10 @@
             element.setAttribute('size', 3);
             element.setAttribute('class', 'editable number input');
             this.container.appendChild(element);
-            element.addEventListener('change', this.toggleEditing.bind(this));
+            var action = this.stopEditing.bind(this);
+            ['blur', 'change'].forEach(function(event){
+                element.addEventListener(event, action);
+            });
             element.addEventListener('change', function(){
                 var n = this.model.n;
                 try {
