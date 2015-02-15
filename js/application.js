@@ -1,4 +1,4 @@
-/*global Reveal, document, numbers*/
+/*global Reveal, document, math*/
 (function(Reveal, numbers){
     'use strict';
 
@@ -33,4 +33,4 @@
     for (var key in actions) {
         Reveal.addEventListener(key, handleEvent);
     }
-})(Reveal, numbers);
+})(Reveal, math);
