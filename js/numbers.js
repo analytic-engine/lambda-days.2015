@@ -1,5 +1,5 @@
-/*global Object, window, document, ns, Math, math*/
-(function($, Observable, math){
+/*global Object, window, document, ns, Math, math, util*/
+(function($, Observable, math, util){
     'use strict';
 
     var Model = $.Model = function(n){
@@ -30,17 +30,7 @@
         return [ base, '<sup>', power, '</sup>' ];
     };
 
-    var extend = function(){
-        var result = {};
-        Array.prototype.slice.call(arguments).forEach(function(argument){
-            for (var key in argument) {
-                if (!(key in result)) {
-                    result[key] = argument[key];
-                }
-            }
-        });
-        return result;
-    };
+    var extend = util.extend;
 
     var Representation = $.RepresentationView = function(model, container, options){
         this.options = extend(options || {}, { base: 10, representation: $.power });
@@ -244,4 +234,4 @@
         }
         return this._canvas;
     };
-})(window.numbers = window.numbers || {}, ns.Observable, math);
+})(window.numbers = window.numbers || {}, ns.Observable, math, util);
