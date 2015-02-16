@@ -31,6 +31,7 @@
 
     var domTable = function(data){
         var domTable = document.createElement('table');
+        domTable.setAttribute('class', 'difference table');
         data.forEach(function(row, index){
             addRow(domTable, row, index);
         });

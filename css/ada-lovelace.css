@@ -1,3 +1,8 @@
 .editable.number.input {
     font-size: 56px;
 }
+
+.difference.table {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
