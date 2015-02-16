@@ -1,5 +1,5 @@
-/*global Reveal, document, math*/
-(function(Reveal, numbers){
+/*global Reveal, document, math, difference*/
+(function(Reveal, numbers, difference){
     'use strict';
 
     var model = new numbers.Model(137);
@@ -20,6 +20,13 @@
             var container = document.getElementById(id + '-editable');
             new numbers.EditableView(model, container);
             new numbers.PunchcardView(model, document.getElementById(id));
+        },
+        'a-difference': function(id){
+            var container = document.getElementById(id);
+            var model = new difference.Model([1,2,3,4,5,6].map(function(x){
+                return Math.pow(x,2);
+            }));
+            new difference.View(model, container);
         }
     };
 
@@ -33,4 +40,4 @@
     for (var key in actions) {
         Reveal.addEventListener(key, handleEvent);
     }
-})(Reveal, math);
+})(Reveal, math, difference);

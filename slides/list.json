@@ -23,5 +23,11 @@
         "attr": {
             "data-state": "a-punchcard"
         }
+    },
+    {
+        "filename": "difference.html",
+        "attr": {
+            "data-state": "a-difference"
+        }
     }
 ]
