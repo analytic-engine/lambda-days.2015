@@ -9,6 +9,11 @@
     margin-right: auto !important;
 }
 
+.difference.table.container {
+    width: 640px;
+    min-height: 200px;
+}
+
 .difference.table {
     margin-left: auto !important;
     margin-right: auto !important;
