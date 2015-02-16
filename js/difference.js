@@ -1,5 +1,5 @@
-/*global window, document*/
-(function($){
+/*global window, document, util*/
+(function($, extend){
     'use strict';
 
     var differencor = function(current){
@@ -29,11 +29,14 @@
         return result;
     };
 
-    var domTable = function(data){
+    var domTable = function(data, options){
+        options = extend(options || {}, { 'rows': data.length });
         var domTable = document.createElement('table');
         domTable.setAttribute('class', 'difference table');
         data.forEach(function(row, index){
-            addRow(domTable, row, index);
+            if (index < options.rows) {
+                addRow(domTable, row, index);
+            }
         });
         return domTable;
     };
@@ -61,13 +64,14 @@
         return domCell;
     };
 
-    var View = $.View = function(model, container){
+    var View = $.View = function(model, container, options){
+        this.options = extend(options || {}, {});
         this.model = model;
         this.container = container;
         this.update();
     };
     View.prototype.update = function(){
         var container = this.container;
-        container.appendChild(domTable(this.model.table()));
+        container.appendChild(domTable(this.model.table(), this.options));
     };
-})(window.difference = window.difference || {});
+})(window.difference = window.difference || {}, util.extend);

@@ -26,7 +26,7 @@
             var model = new difference.Model([1,2,3,4,5,6].map(function(x){
                 return Math.pow(x,3);
             }));
-            new difference.View(model, container);
+            new difference.View(model, container, { 'rows': 2 });
         }
     };
 
