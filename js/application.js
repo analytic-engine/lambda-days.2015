@@ -21,12 +21,19 @@
             new numbers.EditableView(model, container);
             new numbers.PunchcardView(model, document.getElementById(id));
         },
+        'a-squares': function(id){
+            var container = document.getElementById(id);
+            var model = new difference.Model([1,2,3,4,5,6].map(function(x){
+                return Math.pow(x,2);
+            }));
+            new difference.View(model, container, { 'rows': 1 });
+        },
         'a-difference': function(id){
             var container = document.getElementById(id);
             var model = new difference.Model([1,2,3,4,5,6].map(function(x){
-                return Math.pow(x,3);
+                return Math.pow(x,2);
             }));
-            new difference.View(model, container, { 'rows': 2 });
+            new difference.View(model, container);
         }
     };
 

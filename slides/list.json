@@ -25,6 +25,12 @@
         }
     },
     {
+        "filename": "squares.html",
+        "attr": {
+            "data-state": "a-squares"
+        }
+    },
+    {
         "filename": "difference.html",
         "attr": {
             "data-state": "a-difference"
