@@ -1,6 +1,7 @@
 [
     "title.md",
     "thanks.md",
+    "introduction.md",
     {
         "filename": "number.html",
         "attr": {
