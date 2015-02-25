@@ -1,9 +1,18 @@
-/*global Reveal, document, math, difference*/
+/*global Reveal, document, math, difference, logarithm*/
 (function(Reveal, numbers, difference){
     'use strict';
 
     var model = new numbers.Model(137);
     var actions = {
+        'a-log-table': function(id){
+            var container = document.getElementById(id + '-editable');
+            new numbers.EditableView(model, container);
+            new logarithm.LogTableView(model, document.getElementById(id), {
+                'dataTransformer': function(number){
+                    return [number.toFixed(2), Math.log(number).toFixed(4)];
+                }
+            });
+        },
         'a-number': function(id){
             var container = document.getElementById(id);
             new numbers.RegularView(model, container);

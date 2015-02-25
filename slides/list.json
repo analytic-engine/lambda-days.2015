@@ -49,6 +49,12 @@
         "addition.md"
     ],
     {
+        "filename": "log-table.html",
+        "attr": {
+            "data-state": "a-log-table"
+        }
+    },
+    {
         "filename": "number.html",
         "attr": {
             "data-state": "a-number"
