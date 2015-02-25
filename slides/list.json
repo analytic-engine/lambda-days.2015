@@ -44,6 +44,10 @@
         }
     },
     "logarithm.md",
+    [
+        "multiplication.md",
+        "addition.md"
+    ],
     {
         "filename": "number.html",
         "attr": {
