@@ -68,9 +68,15 @@
         }
     },
     {
-        "filename": "difference.html",
+        "filename": "first-difference.html",
         "attr": {
-            "data-state": "a-difference"
+            "data-state": "first-difference"
+        }
+    },
+    {
+        "filename": "second-difference.html",
+        "attr": {
+            "data-state": "second-difference"
         }
     },
     {
