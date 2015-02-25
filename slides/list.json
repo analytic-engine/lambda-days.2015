@@ -30,6 +30,13 @@
         }
     },
     {
+        "filename": "britain.md",
+        "attr": {
+            "data-background": "image/babbage.jpg",
+            "data-background-position": "top"
+        }
+    },
+    {
         "filename": "number.html",
         "attr": {
             "data-state": "a-number"
