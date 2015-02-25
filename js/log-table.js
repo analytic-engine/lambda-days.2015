@@ -38,6 +38,8 @@
     LogTableView.prototype.update = function(){
         var table = this.table();
         table.innerHTML = '';
+        var digits = Math.floor(Math.log10(this.model.n));
+        var target = this.model.n / Math.pow(10, digits);
         range(0, this.options.rows)
             .map(function(index){
                 return index - this.options.rows/2;
@@ -46,7 +48,7 @@
                 return offset * this.options.delta;
             }.bind(this))
             .map(function(delta){
-                return this.model.n + delta;
+                return target + delta;
             }.bind(this))
             .forEach(function(number){
                 addRow(table, this.options.dataTransformer(number));
