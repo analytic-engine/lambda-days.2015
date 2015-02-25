@@ -13,6 +13,22 @@
                 }
             });
         },
+        'a-inverse-log-table': function(id){
+            var container = document.getElementById(id + '-editable');
+            var setter = function(){
+                var digits = Math.floor(Math.log10(model.n));
+                var target = model.n / Math.pow(10, digits);
+                return Math.pow(Math.E, target);
+            };
+            var logModel = new numbers.Model(setter());
+            model.on('n', function(){ logModel.set(setter()); });
+            new numbers.EditableView(model, container);
+            new logarithm.LogTableView(logModel, document.getElementById(id), {
+                'dataTransformer': function(number){
+                    return [number.toFixed(2), Math.log(number).toFixed(4)];
+                }
+            });
+        },
         'a-number': function(id){
             var container = document.getElementById(id);
             new numbers.RegularView(model, container);
