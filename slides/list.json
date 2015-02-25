@@ -19,6 +19,12 @@
         }
     },
     {
+        "filename": "charles-babbage.md",
+        "attr": {
+            "data-background": "image/ada/00.jpg"
+        }
+    },
+    {
         "filename": "number.html",
         "attr": {
             "data-state": "a-number"
