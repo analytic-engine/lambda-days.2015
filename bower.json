@@ -7,6 +7,7 @@
     "analytic-engine-math.util": "~1.0.1",
     "cois-observable": "~1.0.0",
     "analytic-engine-extend": "~1.0.0",
-    "analytic-engine-numbers": "~1.0.0"
+    "analytic-engine-numbers": "~1.0.0",
+    "MathJax": "~2.5.1"
   }
 }
