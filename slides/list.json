@@ -62,6 +62,18 @@
     },
     "logarithm_questionmark.md",
     {
+        "filename": "squares.html",
+        "attr": {
+            "data-state": "a-squares"
+        }
+    },
+    {
+        "filename": "difference.html",
+        "attr": {
+            "data-state": "a-difference"
+        }
+    },
+    {
         "filename": "number.html",
         "attr": {
             "data-state": "a-number"
@@ -83,18 +95,6 @@
         "filename": "punchcard.html",
         "attr": {
             "data-state": "a-punchcard"
-        }
-    },
-    {
-        "filename": "squares.html",
-        "attr": {
-            "data-state": "a-squares"
-        }
-    },
-    {
-        "filename": "difference.html",
-        "attr": {
-            "data-state": "a-difference"
         }
     }
 ]
