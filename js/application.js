@@ -2,7 +2,7 @@
 (function(Reveal, numbers, difference){
     'use strict';
 
-    var model = new numbers.Model(137);
+    var model = new numbers.Model(23);
     var actions = {
         'a-log-table': function(id){
             var container = document.getElementById(id + '-editable');
