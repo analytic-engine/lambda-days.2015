@@ -1,5 +1,10 @@
 [
-    "title.md",
+    {
+        "filename": "title.md",
+        "attr": {
+            "data-background": "image/ada/00.jpg"
+        }
+    },
     "thanks.md",
     "introduction.md",
     "joy-of-coding.md",
