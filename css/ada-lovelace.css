@@ -2,6 +2,10 @@
     font-size: 56px;
 }
 
+.log-table.container {
+    height: 480px;
+}
+
 .log-table.container table {
     margin-left: auto !important;
     margin-right: auto !important;
