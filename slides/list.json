@@ -30,6 +30,13 @@
         }
     },
     {
+        "filename": "ada-lovelace.md",
+        "attr": {
+            "data-background": "image/babbage.jpg",
+            "data-background-position": "top"
+        }
+    },
+    {
         "filename": "britain.md",
         "attr": {
             "data-background": "image/babbage.jpg",
@@ -81,6 +88,13 @@
     },
     {
         "filename": "difference-engine-inception.md",
+        "attr": {
+            "data-background": "image/babbage.jpg",
+            "data-background-position": "top"
+        }
+    },
+    {
+        "filename": "jacquard-loom.md",
         "attr": {
             "data-background": "image/babbage.jpg",
             "data-background-position": "top"
