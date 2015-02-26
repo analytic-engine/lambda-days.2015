@@ -179,5 +179,11 @@
         "attr": {
             "data-background": "image/ada/00.jpg"
         }
+    },
+    {
+        "filename": "ada-lovelace.md",
+        "attr": {
+            "data-background": "image/ada/00.jpg"
+        }
     }
 ]
