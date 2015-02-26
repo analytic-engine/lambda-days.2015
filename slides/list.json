@@ -173,5 +173,11 @@
         "attr": {
             "data-background": "image/analytic-engine.jpg"
         }
+    },
+    {
+        "filename": "first-functional-programmer.md",
+        "attr": {
+            "data-background": "image/ada/00.jpg"
+        }
     }
 ]
