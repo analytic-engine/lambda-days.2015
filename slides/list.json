@@ -121,6 +121,12 @@
         }
     },
     {
+        "filename": "enter-ada-lovelace.md",
+        "attr": {
+            "data-background": "image/analytic-engine.jpg"
+        }
+    },
+    {
         "filename": "number.html",
         "attr": {
             "data-state": "a-number"
