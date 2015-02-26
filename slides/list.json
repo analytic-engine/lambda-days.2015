@@ -149,5 +149,29 @@
         "attr": {
             "data-state": "a-punchcard"
         }
+    },
+    {
+        "filename": "number-cards.md",
+        "attr": {
+            "data-background": "image/analytic-engine.jpg"
+        }
+    },
+    {
+        "filename": "variable-cards.md",
+        "attr": {
+            "data-background": "image/analytic-engine.jpg"
+        }
+    },
+    {
+        "filename": "operation-cards.md",
+        "attr": {
+            "data-background": "image/analytic-engine.jpg"
+        }
+    },
+    {
+        "filename": "program.md",
+        "attr": {
+            "data-background": "image/analytic-engine.jpg"
+        }
     }
 ]
