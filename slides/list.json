@@ -1,1 +1,189 @@
-["title.md"]
+[
+    {
+        "filename": "title.md",
+        "attr": {
+            "data-background": "image/ada/00.jpg"
+        }
+    },
+    "thanks.md",
+    "introduction.md",
+    "joy-of-coding.md",
+    "why.md",
+    "emancipation.md",
+    "perception.md",
+    {
+        "filename": "ada-lovelace.md",
+        "attr": {
+            "data-background": "image/ada/00.jpg"
+        }
+    },
+    {
+        "filename": "lord-byron.md",
+        "attr": {
+            "data-background": "image/ada/00.jpg"
+        }
+    },
+    {
+        "filename": "charles-babbage.md",
+        "attr": {
+            "data-background": "image/ada/00.jpg"
+        }
+    },
+    {
+        "filename": "ada-lovelace.md",
+        "attr": {
+            "data-background": "image/babbage.jpg",
+            "data-background-position": "top"
+        }
+    },
+    {
+        "filename": "britain.md",
+        "attr": {
+            "data-background": "image/babbage.jpg",
+            "data-background-position": "top"
+        }
+    },
+    {
+        "filename": "navigation.md",
+        "attr": {
+            "data-background": "image/babbage.jpg",
+            "data-background-position": "top"
+        }
+    },
+    "logarithm.md",
+    [
+        "multiplication.md",
+        "addition.md"
+    ],
+    {
+        "filename": "log-table.html",
+        "attr": {
+            "data-state": "a-log-table"
+        }
+    },
+    {
+        "filename": "inverse-log-table.html",
+        "attr": {
+            "data-state": "a-inverse-log-table"
+        }
+    },
+    "logarithm_questionmark.md",
+    {
+        "filename": "squares.html",
+        "attr": {
+            "data-state": "a-squares"
+        }
+    },
+    {
+        "filename": "first-difference.html",
+        "attr": {
+            "data-state": "first-difference"
+        }
+    },
+    {
+        "filename": "second-difference.html",
+        "attr": {
+            "data-state": "second-difference"
+        }
+    },
+    {
+        "filename": "difference-engine-inception.md",
+        "attr": {
+            "data-background": "image/babbage.jpg",
+            "data-background-position": "top"
+        }
+    },
+    {
+        "filename": "jacquard-loom.md",
+        "attr": {
+            "data-background": "image/babbage.jpg",
+            "data-background-position": "top"
+        }
+    },
+    {
+        "filename": "difference-engine.md",
+        "attr": {
+            "data-background": "image/babbage.jpg",
+            "data-background-position": "top"
+        }
+    },
+    {
+        "filename": "rotors.md",
+        "attr": {
+            "data-background": "image/babbage.jpg",
+            "data-background-position": "top"
+        }
+    },
+    {
+        "filename": "analytic-engine.md",
+        "attr": {
+            "data-background": "image/analytic-engine.jpg"
+        }
+    },
+    {
+        "filename": "enter-ada-lovelace.md",
+        "attr": {
+            "data-background": "image/analytic-engine.jpg"
+        }
+    },
+    {
+        "filename": "number.html",
+        "attr": {
+            "data-state": "a-number"
+        }
+    },
+    {
+        "filename": "representation.html",
+        "attr": {
+            "data-state": "a-representation"
+        }
+    },
+    {
+        "filename": "power.html",
+        "attr": {
+            "data-state": "a-power"
+        }
+    },
+    {
+        "filename": "punchcard.html",
+        "attr": {
+            "data-state": "a-punchcard"
+        }
+    },
+    {
+        "filename": "number-cards.md",
+        "attr": {
+            "data-background": "image/analytic-engine.jpg"
+        }
+    },
+    {
+        "filename": "variable-cards.md",
+        "attr": {
+            "data-background": "image/analytic-engine.jpg"
+        }
+    },
+    {
+        "filename": "operation-cards.md",
+        "attr": {
+            "data-background": "image/analytic-engine.jpg"
+        }
+    },
+    {
+        "filename": "program.md",
+        "attr": {
+            "data-background": "image/analytic-engine.jpg"
+        }
+    },
+    {
+        "filename": "first-functional-programmer.md",
+        "attr": {
+            "data-background": "image/ada/00.jpg"
+        }
+    },
+    {
+        "filename": "ada-lovelace.md",
+        "attr": {
+            "data-background": "image/ada/00.jpg"
+        }
+    }
+]

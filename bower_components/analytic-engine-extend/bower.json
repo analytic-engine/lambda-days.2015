@@ -1,0 +1,20 @@
+{
+  "name": "extend",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "A custom extend function",
+  "main": "extend.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "SpecRunner.html",
+    "spec",
+    "package.json",
+    "gulpFile.js"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "~2.1.3"
+  }
+}
