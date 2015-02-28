@@ -67,7 +67,9 @@ module.exports = (grunt) ->
                     src: [
                         'slides/**'
                         'bower_components/**'
-                        'js/**'
+                        'js/**',
+                        'css/**',
+                        'image/**'
                     ]
                     dest: 'dist/'
                 },{
