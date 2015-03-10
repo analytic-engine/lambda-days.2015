@@ -1,0 +1,29 @@
+.editable.number.input {
+    font-size: 56px;
+}
+
+.log-table.container {
+    height: 480px;
+}
+
+.log-table.container table {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.punchcard.container {
+    width: 640px;
+    height: 480px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.difference.table.container {
+    width: 640px;
+    min-height: 200px;
+}
+
+.difference.table {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
