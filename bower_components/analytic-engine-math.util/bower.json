@@ -1,0 +1,20 @@
+{
+  "name": "math.util",
+  "version": "1.0.1",
+  "license": "MIT",
+  "description": "Tidbits of mathematical utility",
+  "main": "math.util.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "SpecRunner.html",
+    "spec",
+    "package.json",
+    "gulpFile.js"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "~2.1.3"
+  }
+}
